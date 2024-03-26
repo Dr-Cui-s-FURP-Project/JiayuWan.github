@@ -29,7 +29,7 @@
 7. 时间线
     - windows -> Extensions，输入omni.anim.window.timeline
 
-![Regular instructions](/regular_inputs.png)
+![Regular instructions](learning_notes/3_27/regular_inputs.png)
 
 ## Work flow 工作流程
 1. GUI
