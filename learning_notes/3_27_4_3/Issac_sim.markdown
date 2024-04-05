@@ -122,3 +122,7 @@
 * 在Menu Bar中选择 [^Window]， 选择最后的 [^NewViewPort], 并且将新生成的视窗放置在合适的位置
 * 在新视窗的左上角选择[^Persepctive]，选择Camera中的对应摄像头
 * 选中stage树中的camera可对其的位置、视角做调整
+
+
+# 4/18
+## 使用Python脚本来代替GUI使用
