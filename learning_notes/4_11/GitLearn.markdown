@@ -1,4 +1,4 @@
-# Git Learning 4/11
+# Git Command 4/11
 
 ## 分支 branching
 ### 创建分支
@@ -120,4 +120,20 @@ git switch main
 ### git merge
 * 该命令是将下载到的数据与本地仓库合并，将会修改本地内容
 
+# GitHub CLI
+## issue 问题
+* issue是GitHub中用于任务分配、追踪进度、报告bug等行为的功能
+1. 创建issue
+```
+gh issue create --title "Issue Title" --body "Issue description"
+```
 
+2. 查看issue
+```
+gh issue list
+```
+
+3. 删除issue
+```
+gh issue close <issue_number>
+```
