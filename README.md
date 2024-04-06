@@ -9,5 +9,5 @@ Jiayu Wan's repository
 
 
 weekly report 4/11
-    [Issac Sim learning notes](learning_notes/4_11/Issac_sim.markdown)
+    [Issac Sim learning notes](learning_notes/4_11/Issac_sim.markdown)  
     [Git learning notes](learning_notes/4_11/GitLearn.markdown)
