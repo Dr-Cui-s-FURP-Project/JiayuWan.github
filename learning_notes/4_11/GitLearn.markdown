@@ -55,7 +55,7 @@ git branch -d feature-new
 ```
 git diff
 ```
-若镜像查看单一文件中的修改内容
+若仅查看单一文件中的修改内容
 ```
 git diff example.txt
 ```
@@ -70,7 +70,7 @@ git diff --staged
 ```
 git log
 ```
-以获取具体两次commit的哈希值，并且按下[^q] quit 来返回命令行
+以获取具体两次commit的哈希值，并且按下[^q] quit 来返回命令行  
 2. 比较两次提交间的差异
 ```
 git diff [older-commit-hash] [newer-commit-hash]
@@ -85,4 +85,39 @@ git restore example.txt
 
 ### 将文件从暂存区中移除，但保留工作区修改
 ```
-git reset 
+git reset HEAD -- example.txt
+```
+此指令仅仅修改暂存区，工作区修改将会被保留
+
+## HEAD
+### 定义
+* HEAD是一个reference，一般指向一个分支，当checkout到一个特定的commit的时候，他会指向那个commit。
+### HEAD操作
+1. 查看当前HEAD所指向的内容：
+```
+git show HEAD
+```
+2. 回到上一次历史commit：
+```
+git checkout HEAD~
+```
+此指令会使HEAD指向上一次的commit，此时处于分离头状态。但他并不会改变工作历史。
+
+3. 回到历史commit后再返回main
+```
+git switch main
+```
+
+## git pull
+### 实质：
+* git pull的实质是两个指令先后执行：
+    1. git fetch
+    2. git merge
+
+### git fetch
+* 该命令是从远程仓库中下载最新的历史数据到本地仓库，包括新的tag、branch
+
+### git merge
+* 该命令是将下载到的数据与本地仓库合并，将会修改本地内容
+
+
