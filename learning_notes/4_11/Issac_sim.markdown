@@ -203,8 +203,4 @@ DynamicCuboid(prim_path="/World/cube",
 ### 设置舞台
 * 创建地板
 * 使用下方的content窗口来导航至Isaac/Robots/JetBot，并将jetbot.usd拖拽到舞台上
-* jetbot.usd将会被放置在舞台树的world路径下
 
-### 构建控制图 action graph
-* Window -> Visual Scripting -> Action Graph, 点击New Action Graph打开一个空图。
-* 在graph editor中搜索栏中输入controller，然后将Articulation Controller和Differential Controller拖动到图中
